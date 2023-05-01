@@ -13,10 +13,7 @@ men_prefs = {"Kshitij": ["Giriraj", "Siddhant", "Amrutha", "Rachit","Vineet"],
             "Rachit": ["Siddhant",  "Kshitij", "Giriraj","Amrutha","Vineet"]
              }
 
-#women_prefs = {"Amy": ["Bob", "David", "Adam", "Charlie"],
-#               "Beth": ["Bob", "Charlie", "David", "Adam"],
-#               "Cathy": ["Adam", "Charlie", "David", "Bob"],
-#               "Diana": ["Charlie", "Adam", "Bob", "David"]}
+
 women_prefs = {"Amrutha":["Giriraj","Vineet","Kshitij","Siddhant","Rachit"]}
 
 # Define a dictionary to keep track of who is currently matched
