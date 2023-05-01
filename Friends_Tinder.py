@@ -5,10 +5,7 @@ men = ["Kshitij", "Giriraj", "Siddhant", "Vineet","Rachit"]
 women = ["Amrutha"]
 
 # Define the preferences of each person
-#men_prefs = {"Adam": ["Beth", "Amy", "Diana", "Cathy"],
-           ##  "Bob": ["Cathy", "Diana", "Amy", "Beth"],
-            # "Charlie": ["Diana", "Beth", "Amy", "Cathy"],
-            # "David": ["Amy", "Beth", "Cathy", "Diana"]}
+
 men_prefs = {"Kshitij": ["Giriraj", "Siddhant", "Amrutha", "Rachit","Vineet"],
             "Giriraj": ["Vineet", "Kshitij", "Amrutha","Siddhant","Rachit" ],
             "Siddhant": [ "Kshitij", "Rachit", "Amrutha", "Giriraj","Vineet"],
@@ -63,20 +60,3 @@ for woman, man in matches.items():
     print(woman + " is matched with " + man)
 
 
-'''In the lines you mentioned:
-
-makefile
-Copy code
-current_rank = women_prefs[woman].index(current_man)  # 0
-new_rank = women_prefs[woman].index(man)  # 1
-current_rank and new_rank represent the index of current_man and man in the preference list of the woman woman. The preference list is an ordered list of men ranked in order of preference by the woman.
-
-For example, if woman's preference list is:
-
-
-['Adam', 'Bob', 'Charlie']
-And current_man is 'Adam', then current_rank will be 0, because 'Adam' is at the first position in the list. 
-Similarly, if man is 'Charlie', then new_rank will be 2, because 'Charlie' is at the last position in the list.
-
-The purpose of comparing these ranks is to determine whether the woman prefers the new man (man) over her current partner (current_man). 
-If new_rank is smaller than current_rank, it means that the woman prefers the new man over her current partner, and the algorithm will update the matches accordingly.'''
