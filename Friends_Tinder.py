@@ -22,7 +22,7 @@ women_prefs = {"Amrutha":["Giriraj","Vineet","Kshitij","Siddhant","Rachit"]}
 # Define a dictionary to keep track of who is currently matched
 matches = {}
 
-# Define a function to run the Gale-Shapley algorithm
+# Define a function to run the algorithm
 def gale_shapley(men_prefs, women_prefs):
     # Create a list of all the available men
     free_men = list(men_prefs.keys())
